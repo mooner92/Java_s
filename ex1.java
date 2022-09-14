@@ -15,4 +15,4 @@ public class ex1 {
             System.out.print("\n");
         }
     }
-}
+}//
