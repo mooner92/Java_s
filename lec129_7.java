@@ -24,6 +24,6 @@ public class lec129_7 {
             if (!prime[i])
                 System.out.print(i + " ");
         }
-
+        sc.close();
     }
 }

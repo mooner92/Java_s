@@ -1,4 +1,4 @@
-public class lec_129_13 {
+public class hw_129_13 {
     public static void main(String[] args) {
         String[] kinds = { "Clubs", "Diamonds", "Hearts", "Spades" };
         String[] num = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King" };
