@@ -5,4 +5,4 @@ public class hw_129_13 {
         for (int i = 0; i < 5; i++) 
             System.out.println(kinds[0][(int) (Math.random() * 100) % 4] + "의 " + kinds[1][(int) (Math.random() * 100) % 12]);
     }
-}
+}//
