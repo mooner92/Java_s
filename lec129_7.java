@@ -6,6 +6,8 @@ public class lec129_7 {
     static boolean prime[] = new boolean[101];
 
     public static void main(String[] args) /* throws Exception */ {
+        X x1 = new X();
+        System.out.println(x1.i); //lec_n_class에서 선언된 X클래스의 public i 에 접근함
 
         Scanner sc = new Scanner(System.in);
         int N = 100;
