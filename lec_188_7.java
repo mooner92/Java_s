@@ -27,4 +27,4 @@ class Movie {
         return String.format("영화 제목 : %s\n영화 감독 : %s\n주연배우 : %s\n개봉 연도 : %d\n평점 : %d", this.name, this.director,
                 this.actor, this.l_year, this.score);
     }
-}
+}//
