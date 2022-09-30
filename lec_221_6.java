@@ -31,6 +31,6 @@ public class lec_221_6 {
             Contact.cnt_add();
         }
         System.out.println(Contact.count);
-        sc.close();
+        sc.close();//
     }
 }
