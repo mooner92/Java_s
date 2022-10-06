@@ -29,4 +29,4 @@ public class lec_274_3 {
         System.out.println(soccer.getName());
         System.out.println("경기자수 : "+soccer.getPlayers());
     }
-}//
+}////
