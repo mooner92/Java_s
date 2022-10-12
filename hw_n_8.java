@@ -35,5 +35,5 @@ public class hw_n_8 {
         for (Student student : array) {
             System.out.println(student.score);
         }
-    }//
+    }
 }
