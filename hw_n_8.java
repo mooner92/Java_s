@@ -26,7 +26,7 @@ public class hw_n_8 {
     }
 
     public static void main(String[] args) {
-        Student[100] stl;
+        Student[] stl = new Student[100];
         System.out.println(average(stl));
     }
 }
