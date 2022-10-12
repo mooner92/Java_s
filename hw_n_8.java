@@ -1,39 +1,32 @@
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+
+interface GetInfo {
+    double getValue();
+}
+
+class Student implements GetInfo {
+    double score;
+
+    Student() {
+        score = (int) Math.random() * 4.5;
+    }
+
+    double getValue() {
+        return this.score;
+    }
+}
+
+
 public class hw_n_8 {
-    interface GetInfo {
-        public double getValue(double d);
+    double average(double[] object) {
+        double sum = 0.0;
+        for (int i = 0; i < object.length(); i++) {
+            sum += object[i].getValue();
+        }
+        return sum / object.length();
     }
 
-    class Student implements GetInfo {
-        double score;
-
-        //@Override
-        public double getValue(double d) {
-            return score;
-        }
-
-         void Student() {
-            this.score = Math.random() * 4.5;
-        }
-
-
-    }
-    
     public static void main(String[] args) {
-        ArrayList<Student> stl = new ArrayList<Student>();
-        int t=10;
-        while (0<t--) {
-            Student st = new Student();
-            stl.add(st);
-        }
-        average(stl);
-
-    }
-
-    double average(ArrayList array) {
-        for (Student student : array) {
-            System.out.println(student.score);
-        }
+        Student[100] stl;
+        System.out.println(average(stl));
     }
 }
