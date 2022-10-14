@@ -31,11 +31,11 @@ public class hw_n_goldgame {
 				board[i][j] = " ";
 			}
 		}
-		board[7][2] = "G"; //골드 위치
+		board[9][16] = "G"; 
 		Main me = new Main();
-		board[me.y][me.x] = "@"; //주인공 위치
+		board[me.y][me.x] = "@"; 
 		Monster m = new Monster();
-		board[m.y][m.x] = "M"; //몬스터 위치
+		board[m.y][m.x] = "M"; 
 		while(true) {
 			System.out.print("###################\n");
 			for(int i=0;i<10;i++) {
@@ -61,11 +61,11 @@ public class hw_n_goldgame {
 				board[my][mx] = "M";
 			}
 			if(me.y == 7 && me.x ==2) {
-				System.out.println("골드 획득! \nYOU WIN");
+				System.out.println("도착.");
 				break;
 			}
 			if(me.y == m.y && me.x == m.x) {
-				System.out.println("몬스터에게 잡혔습니다! \nGAME OVER");
+				System.out.println("잡혔습니다.");
 				break;
 			}		
 		}

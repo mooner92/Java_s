@@ -11,7 +11,7 @@ class Student implements GetInfo {
 
     public double getValue() {
         return this.score;
-    }
+    }//
 }
 
 public class hw_n_8 {
