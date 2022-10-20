@@ -14,7 +14,7 @@ public class st_stringRotate_1 {
             System.out.println();
             System.out.println("---------------------------------------------");
             cnt++;
-        }
+        }//
         sc.close();
     }
 }
