@@ -9,4 +9,4 @@ public class Add2 {
         System.out.println(x + y);
         sc.close();
     }
-}
+}//
