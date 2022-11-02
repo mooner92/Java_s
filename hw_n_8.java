@@ -33,4 +33,4 @@ public class hw_n_8 {
         }
         System.out.printf("%.1f",average(stl));
     }
-}
+}//
