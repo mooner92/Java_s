@@ -19,9 +19,17 @@ public class MyFrame extends JFrame {
         add(panel);
         setVisible(true);
     }
+    public static void main(String[] args){
+         new MyFrame();
+    }
 }
-
+/* 
 public class lec_n_9 {
-    MyFrame f = new MyFrame();
-    
+    public static void main(String[] args) {
+        MyFrame f = new MyFrame();
+    }
+
+    //f();
+
 }
+*/
