@@ -9,6 +9,8 @@ public class swing_9 extends JFrame{
 
     public swing_9(){
         setTitle("Label Test");
+        setSize(400,150);
+        panel = new JPanel();
         label1 = new JLabel("Color Label");
         label1.setForeground(Color.blue);
         label2 = new JLabel("Front Label");
