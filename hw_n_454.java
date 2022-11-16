@@ -45,14 +45,17 @@ public class hw_n_454 extends JFrame implements ActionListener{
             
             if(flag && acm.equals("=")){
                 flag = false;
+
                 if(operator.equals("+"))
-                jt.setText((Double.parseDouble(acm)+result)+"");
+                jt.setText((Double.parseDouble(jt.getText())+result)+"");
                 else if(operator.equals("-"))
-                jt.setText((Double.parseDouble(acm)-result)+"");
+                jt.setText((result-Double.parseDouble(jt.getText()))+"");
                 else if(operator.equals("/"))
-                jt.setText((Double.parseDouble(acm)/result)+"");
+                jt.setText((result/Double.parseDouble(jt.getText()))+"");
                 else if(operator.equals("*"))
-                jt.setText((Double.parseDouble(acm)*result)+"");
+                jt.setText((Double.parseDouble(jt.getText())*result)+"");
+                else if(operator.equals("%"))
+                jt.setText((result%Double.parseDouble(jt.getText()))+"");
             }
             else{
                 flag = true;
