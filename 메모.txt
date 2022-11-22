@@ -49,3 +49,25 @@ extends implements 같이쓰는경우 등등
 (int) Math.random() * (최댓값-최소값+1) + 최소값
 
 틱택토 , 계산기(사칙연산) 이렇게 두 문제 11/07까지
+
+convex = 도형 안의 임의의 두 점을 이었을 때 모든 경우에 도형 안에 속하는 경우에
+concave = 도형 안의 임의의 두 점을 이었을 때 한가지 경우라도 도형 바깥을 지나는 경우
+
+마우스 리스너는 직접 구현해야함
+5개의 메서드가 있고 다 작성해주어야함
+
+마우스 어댑터는 5개함수의 기본 기능을 다 작성해줌
+그걸 상속받아 사용하는 것 -> 쓰고싶은 것만 튜닝하여 사용하면 됨
+
+mouseListner의 종류 다섯 가지
+mouseClicked
+mouseExited
+mouseEntered
+mousePressed
+mouseReleased
+
+
+
+MouseMotionListener의 종류 두 가지
+mousedirect
+mousemoved
