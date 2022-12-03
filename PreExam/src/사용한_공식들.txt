@@ -1,0 +1,26 @@
+Arrays.sort(array1);
+Arrays.fill(array1,9);
+
+try{}  //예외가 발생할 수 있는 문장
+catch( 예외명 ){}  //예외를 던지면 여기서 잡아줌
+finally{} //이거는 생략 가능
+예외명 종류 
+
+런타임 에러
+ArithmaticException
+NullPointerException 
+ArrayIndexOutOfBoundsException
+ClassCastException
+NegativeArraySizeException
+OutOfMemoryException
+NoClassDefFoundException
+
+컴파일 에러
+ClassNotFoundException
+IOException
+illegalAccessException
+NoSuchMethodException
+NoSuchFieldException
+InterruptedException
+FileNotFoundException
+
