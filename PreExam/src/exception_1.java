@@ -1,4 +1,4 @@
-package PreExam.src;
+package PreExam;
 
 public class exception_1 {
     
