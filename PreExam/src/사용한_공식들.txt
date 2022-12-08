@@ -24,3 +24,43 @@ NoSuchFieldException
 InterruptedException
 FileNotFoundException
 
+처음 생성된 frame은 background속성을 못받음 -> panel이 아니기 때문
+키 이벤트의 순서 = keyPressed -> keyTyped -> keyReleased
+버튼의 이벤트 = implements ActionListner
+키보드 이벤트 = implements KeyListner
+
+
+key event 종류
+int getKeyChar() 는 문자의 유니코드를 반환함
+int getKeyCode() 는 문자의 키코드를 반환함
+boolean isActionKey() 는 액션키이면 (copy , paste 등) true 반환 아니라면 false 반환
+
+예문
+public void keypressed(KeyEvent e){
+    if(e.getKeyChar()=='c'){
+        cnt++;  //입력된 문자가 'c'라면 cnt++
+    }
+}
+
+public void keypressed(KeyEvent e){
+    if(e.getKeyCode()==KeyEvent.VK_ENTER){
+        cnt++; //입력된 문자가 엔터키 라면 cnt++;
+    }
+}
+
+public void keyPressed(KeyEvent e){
+    if(e.isControlDown()){
+        sout("컨트롤이 눌린 상태입니다."); // 컨트롤이 눌려있는지 확인해주는 함수
+    }
+}
+
+마우스이벤트
+
+implements 종류가 세 가지나 있음
+MouseListener 에 mousePressed , mouseReleased , mouseEntered , mouseExited , mouseClicked
+MouseMotionListener 에 mouseDragged , mouseMoved 
+휠은 제외
+마우스리스너는 패널에 적용시킴 
+예:) panel.addMouseListener(this); panel.addMouseMotionListener(this);
+mouseListener e 에서
+e.getx() , e.gety() 를 사용하여 (클릭)된 지점의 xy좌표를 호출 가능
