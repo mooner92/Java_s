@@ -64,3 +64,33 @@ MouseMotionListener 에 mouseDragged , mouseMoved
 예:) panel.addMouseListener(this); panel.addMouseMotionListener(this);
 mouseListener e 에서
 e.getx() , e.gety() 를 사용하여 (클릭)된 지점의 xy좌표를 호출 가능
+
+추상 인터페이스인 MouseListener 을 implement하면 모든 함수들을 재정의 해 주어야함 -> clicked만 사용하고 싶은데
+나머지도 다 빈 내용으로라도 채워주어야 함 ->  이를 방지하고자 MouseAdapter 클래스를 지원함
+직접 만든 이벤트리스너테 MouseAdapter 클래스를 extends 해주면 쓰고싶은 이벤트만 작성하면 나머지는 빈 칸으로 자동으로 처리해줌
+
+------------------------------------------------------------------------------------------------------------
+
+그림함수 
+따로 패널을 만들어줌(여기서는 JFrame을 extends 하는 것이 아닌 JPanel을 extends할 것 무조건!!!!!!!!!!!)
+안에 protected함수를 만들고 매개변수로 Graphics g 를 받아줌
+
+g.drawOval(시작x,시작y,그릴크기x만큼,그릴크기y만큼);
+g.drawRect("");
+g.setColor(Color.BLUE);
+g.fillOval("");
+g.fillRect("");
+
+font 생성
+s.setFont(new Font("Arial",Font.PLAIN,10)) // Arial체의 plain 10포인트 짜리 폰트 객체 생성 완료
+
+color 생성
+Color c = new Color(255,255,255,128) 순서대로 R,G,B,투명도(0~255를 퍼센트로 정의함)
+
+화면 좌표상에 텍스트를 출력하려면 g.drawString("helloworld",x,y); 로 출력함 -> 레이블로도 가능할 듯?
+위와같이 폰트 지정 안하면 디폴트로 출력함
+
+drawPolygon(int[]x, int[]y,x.length); 배열의 길이만큼 반복하는게 일반적이고 배열의 좌표마다 점을 찍고 이음
+
+그림을 그리는 paintComponent 함수가 JPanel이나 JLabel같은 그래픽 개체 안에 있는 경우 super.을 붙여 실행해준다.
+
