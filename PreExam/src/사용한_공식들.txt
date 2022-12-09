@@ -94,3 +94,40 @@ drawPolygon(int[]x, int[]y,x.length); 배열의 길이만큼 반복하는게 일
 
 그림을 그리는 paintComponent 함수가 JPanel이나 JLabel같은 그래픽 개체 안에 있는 경우 super.을 붙여 실행해준다.
 
+배열 선언
+Integer[] a = {};
+Double[]
+Character[]
+
+포매팅하여 출력할거면 printf를 사용
+
+벡터의 정렬 = Collections.sort(v) 를 사용하고 오름차순이 디폴트임
+
+해당 항목이 위치하는 인덱스 검색
+int index = list.indexOf("Mango");
+해당 항목이 있다면 true 반환 
+boolean f = set.contains("Ham");
+
+ArrayList 와 LinkedList 모두 list.get(i) 로 인덱스접근 가능
+
+Arrays.asList 를 사용하여 초기화 가능
+이미 있는 list라면
+LinkedList ll = Arrays.asList(list);
+없는 리스트라면 지금 만들어서 대입
+LinkedList ll = Arrays.asList(1,2,3,4,5,6);
+
+s가 Set이고 set은 중복을 허용하지 않기 때문에 추가할 수 없다면 중복인 것임
+if(!s.add(a)) 
+
+map.keySet() 은 map의 key들을 모아놓은 집합이다.
+
+map의 모든 요소 방문하기 
+for(var key : map.keySet()){
+    sout(key + " " + map.get(key));
+}
+
+람다식 기본 공식
+무명 클래스 ->  람다식 변환
+
+무명 클래스 안의 함수의 매개변수 e 라고 하자
+e -> {//여기에 함수 내용 그대로 작성} 
